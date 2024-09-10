@@ -12,4 +12,7 @@ function solution(letter) {
     
     letterArr.forEach((i) => answer += morse[i]);
     return answer;
+    
+    // return letterArr.map((v) => morse[v]).join('');
+    // return letter.split(' ').reduce((prev, curr) => prev + morse[curr], '');
 }
