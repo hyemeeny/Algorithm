@@ -5,3 +5,5 @@ function solution(box, n) {
     
     return row*column*height;
 }
+
+// return box.reduce((acc,v) => acc * Math.floor(v / n), 1);
