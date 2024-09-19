@@ -1,5 +1,5 @@
 function solution(n) {
-    let arr = [];
+    const arr = [];
     
     for(let i=1; i<=n; i++) {
         for(let j=2; j<i; j++) {
