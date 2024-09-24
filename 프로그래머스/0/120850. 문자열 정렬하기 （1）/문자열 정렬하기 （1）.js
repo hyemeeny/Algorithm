@@ -5,4 +5,5 @@ function solution(my_string) {
     return answer.sort((a,b) => a-b)
 }
 
-// return my_string.split("").filter((v) => !isNaN(v)).map((v) => Number(v)).sort((a,b) => a-b)
+// return my_string.split("").filter((v) => !isNaN(v)).map((v) => v*1).sort((a,b) => a-b)
+// v*1 === Number(v)
