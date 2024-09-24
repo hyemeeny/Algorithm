@@ -1,6 +1,8 @@
 function solution(my_string) {
     const str = 'aeiou';
     return [...my_string].filter((v) => !str.includes(v)).join('');
+    
+    // return my_string.replace(/[aeiou]/g, '');
 }
 
 // 자바스크립트 배열 includes() 함수 – 배열에 특정 요소 포함 여부 확인
