@@ -9,3 +9,5 @@ function solution(my_string) {
     
     return answer;
 }
+
+// return [...my_string].reduce((acc,cur)=>Number(cur) ? +acc + +cur : acc, 0)
