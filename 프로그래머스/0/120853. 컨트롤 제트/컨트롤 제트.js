@@ -4,6 +4,7 @@ function solution(s) {
     s.split(' ').forEach((v, i) => {
         if(v === "Z") {
             answer -= Number(s.split(' ')[i-1]);
+            console.log(s.split(' ')[i-1])
         } else {
             answer += Number(v);
         }
