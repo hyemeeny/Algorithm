@@ -1,3 +1,3 @@
 function solution(strlist) {
-    return strlist.map((v) => v.length);
+    return strlist.map((str) => str.length);
 }
