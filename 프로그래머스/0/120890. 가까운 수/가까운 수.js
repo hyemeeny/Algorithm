@@ -4,8 +4,8 @@ function solution(array, n) {
     let minNum = 0;
     let index = 0;
     
-    // Math.abs 음수를 양수로 변환
     for(let i=0; i<array.length; i++) {
+        // Math.abs 음수를 양수로 변환
         answer.push(Math.abs(n-array[i])) // [17, 10, 8]
     }
     
