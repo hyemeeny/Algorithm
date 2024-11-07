@@ -1,6 +1,11 @@
 function solution(dots) {
-    const [[x1, y1], [x2, y2], [x3, y3], [x4, y4]] = dots;
-    let length = Math.abs(x1 - x2) || Math.abs(x2 - x3)
-    let height = Math.abs(y3 - y2) || Math.abs(y3 - y4)
-    return length * height;
+    let x = [],
+        y = [];
+
+    for (let pos of dots) {
+        x.push(pos[0]);
+        y.push(pos[1]);
+    }
+
+    return (Math.max(...x) - Math.min(...x)) * (Math.max(...y) - Math.min(...y))
 }
