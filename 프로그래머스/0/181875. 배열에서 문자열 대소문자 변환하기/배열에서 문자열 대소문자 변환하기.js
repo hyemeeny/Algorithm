@@ -1,9 +1,3 @@
 function solution(strArr) {
-    const answer = [];
-    
-    strArr.map((a, i) => {
-        answer.push(i%2===0 ? a.toLowerCase() : a.toUpperCase());
-    })
-    
-    return answer;
+    return strArr.map((v, i) => i%2===0 ? v.toLowerCase() : v.toUpperCase());
 }
