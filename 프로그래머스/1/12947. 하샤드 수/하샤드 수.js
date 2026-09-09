@@ -1,16 +1,11 @@
 function solution(x) {
-    const numX = x.toString().split("");
     let num = 0;
+    const numX = x.toString().split("");
     
     num = numX.reduce((acc, cur) => {
         console.log(parseInt(acc)+parseInt(cur))
         return parseInt(acc)+parseInt(cur)
     }, 0)
-    
-    
-    console.log('배열 값', num)
-    console.log(typeof x, typeof num)
-    console.log(x + '%' + num + '=' + x%num)
     
     return x % num === 0 ? true : false;
 }
