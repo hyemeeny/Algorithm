@@ -3,11 +3,10 @@ function solution(x) {
     const numX = x.toString().split("");
     
     num = numX.reduce((acc, cur) => {
-        console.log(parseInt(acc)+parseInt(cur))
         return parseInt(acc)+parseInt(cur)
     }, 0)
     
-    return x % num === 0 ? true : false;
+    return x % num === 0;
 }
 
 // 18 > 1+8=9 > 18/9=2...0 > 하샤드 수 true 
