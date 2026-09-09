@@ -1,10 +1,8 @@
 function solution(x) {
-    let num = 0;
     const numX = x.toString().split("");
-    
-    num = numX.reduce((acc, cur) => {
-        return parseInt(acc)+parseInt(cur)
-    }, 0)
+    const num = numX.map(Number).reduce((acc, cur) => acc + cur, 0);
+    // numX.map(Number) Number는 자바스크립트에 내장된 함수, 축약형으로 사용 가능
+    // ['1', '2', '3'].map((item) => Number(item));
     
     return x % num === 0;
 }
