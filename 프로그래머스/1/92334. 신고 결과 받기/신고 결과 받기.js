@@ -1,8 +1,8 @@
 function solution(id_list, report, k) {
     const answer = [];
+    const uniqueReports = new Set(report); // 중복된 신고 기록(신고자-대상 쌍) 제거
     const reportCount = new Map();   // 신고당한 사람 → 횟수
     const reportedBy = new Map();    // 신고한 사람 → 신고한 목록
-    const uniqueReports = new Set(report); // 중복된 신고 기록(신고자-대상 쌍) 제거
     const banned = new Set();        // 정지된 사람
 
     uniqueReports.forEach((entry) => {
