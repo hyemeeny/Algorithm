@@ -3,11 +3,8 @@ function solution(s){
     let yCount = 0;
     
     Array.from(s).forEach((v) => {
-        if(v.toLowerCase() === 'p') {
-            pCount++
-        } else if(v.toLowerCase() === 'y') {
-            yCount++
-        }
+        if(v.toLowerCase() === 'p') pCount++
+        if(v.toLowerCase() === 'y') yCount++
     })
 
     return pCount === yCount ? true : false;
